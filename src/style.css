@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* bem css convention */
+
+.App {
+  height: 100vh;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* SearchBox  */
+
+.searchbox {
+  position: relative;
+}
+
+.searchbox__input {
+  height: 40px;
+  width: 800px;
+  padding-left:  20px;
+  padding-right: 40px;
+  border-radius: 5px;
+  border: 2px solid rgb(64, 62, 62);
+}
+
+.searchbox__icon {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+}
+
+/* NewNoteForm */
+
+.addnote {
+  position: relative;
+  padding: 25px;
+  height: 280px;
+  width: 300px;
+  background-color: rgb(227, 227, 227);
+  border-radius: 10px;
+}
+
+.addnote__savebutton {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+}
+
+.addnote__textarea {
+  flex: 1;
+  resize: none;
+  height: 100%;
+  background-color: transparent;
+  font-size: 1rem;
+  line-height: 1.875;
+  outline: none;
+  border: none;
+}
+
+/* NewNoteForm */
+
+.notecontainer__notes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.notecontainer__heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Note */
+
+.note {
+  padding: 25px;
+  height: 220px;
+  width: 240px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(189, 172, 204);
+  border-radius: 10px;
+}
+
+.note__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
